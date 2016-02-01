@@ -1,0 +1,418 @@
+
+body {
+  background-image: url('./layout/main_bg.jpg');
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+  color:#630a0a;
+  font-size: 15px;
+}
+/**************************** Content division *******************************/
+
+#main {
+  position: relative;
+  top: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  width: 800px;
+  height: auto;
+  margin-bottom: 45px;
+  box-shadow: 0px 0px 7px 0px #000;
+  -moz-box-shadow: 0px 0px 7px 0px #000;
+  -webkit-box-shadow: 0px 0px 7px 0px #000;
+}
+
+/* To be filled in by shared pages */
+
+#header_img{
+  position: relative;
+  top:0px;
+  left: 0px;
+  background-color: white;
+  width: 100%;
+  height: 170px;
+  padding-top:10px;
+  background-color: white;
+  font-size:100px;
+}
+
+#footer {
+  position: relative;
+  margin-right:auto;
+  margin-left:auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  bottom: 10px;
+  width: 300px;
+  height: auto;
+  font-size: 12px;
+  background: none;
+  text-align: center;
+}
+
+
+#linkbar {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  width:800;
+  height: 45px;
+  background-color:#630a0a;
+  margin-bottom: 5px;
+}
+
+/* Side tab thingies */
+
+#tabs {
+  position: fixed;
+  right: -33px;
+  width: 66px;
+  height: 33px;
+}
+
+#tabs:hover{
+  right:-15px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.fb{
+    top:35px;
+}
+
+.tw{
+    top:75px;
+}
+
+.inst{
+    top:115px;
+}
+
+.tum{
+    top:155px;
+}
+
+.hq{
+  top:195px;
+}
+
+
+/* Where each page diverges */
+
+#content {
+  position: relative;
+  padding: 15px;
+  height: auto;
+  background: none;
+}
+
+/* For the homepage */
+
+#socials {
+  position: relative;
+  padding: 5px;
+  margin: 10px;
+  height: 370px; /* 670 with instagram feed */
+  width: 750px;
+}
+
+#facebook {
+  position: relative;
+  padding: 5px;
+  margin: 10px;
+  left: 15px;
+  height: 300px;
+  width: 360px;
+  float: left;
+  background-color:#520000;
+}
+
+#twitter {
+  position: relative;
+  padding: 5px;
+  margin: 10px;
+  right: 15px;
+  height: 300px;
+  width: 300px;
+  background-color: #520000;
+  float: right;
+}
+
+#instagram {
+  position: relative;
+  top: 350px;
+  margin: 10px;
+  height: 300px;
+  width: 700px;
+  background-color: #520000;
+}
+
+/**************************** Image layout wrappers *******************************/
+
+.padded{
+  padding-top:5px;
+}
+
+.wrapRight{
+  float: right;
+  margin: 10px;
+}
+.wrapLeft{
+  float: left;
+  margin: 10px;
+}
+
+/************************** Layout/visual stuff ******************************/
+
+h1 {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 26px;
+  letter-spacing:-1px;
+  font-family: sans-serif;
+  color: #0f2100;
+  margin: 10px;
+  text-align: center;
+}
+
+
+
+h2{
+  color:#520202;
+  font-weight:none;
+  font-family:"Rochester";
+  text-decoration: none;
+  margin: 15px 0px 0px 0px;
+  font-size:20px;
+  text-align: center;
+}
+
+
+h3{
+  color: #404040;
+  font-weight: bold;
+  margin: 5px;
+  font-size: 16px;
+}
+
+p{
+  text-indent: 20px;
+  margin: 2px 10px 10px 10px;
+  text-align: left;
+}
+
+div.hr {
+  height: 20px;
+  background: #fff url('./layout/hr.jpg') no-repeat scroll center;
+  margin: 25px;
+}
+
+div.hr hr {
+  display: none;
+}
+
+b{
+  color: #0f2100;
+}
+
+i{
+  color: #2b3b1d;
+}
+
+
+a:link, a:visited{
+  color:#667558;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+a:hover{
+  color: #1d2e0f;
+}
+
+
+table,th,td{
+  border:none;
+  text-align:center;
+  line-height:100%;
+  font-size:14px;
+  border-collapse:collapse;
+}
+
+table h3{
+  margin-bottom:0px;
+}
+
+td{
+  padding:20px;
+  width:220px;
+}
+
+/***************************** Menu bar *********************************/
+
+/*#cssbg{
+  background-color:#630a0a;
+  position:relative;
+  top:176px;
+  width:auto;
+  height: 50px;
+}*/
+
+
+#cssmenu,
+#cssmenu >
+ul {
+  background-color: #994646;
+  font-family: "Rochester", cursive;
+  font-weight: normal;
+}
+
+
+#cssmenu:before,
+#cssmenu:after,
+#cssmenu > ul:before,
+#cssmenu > ul:after {
+  content: "";
+  display: table;
+}
+
+#cssmenu:after,
+#cssmenu > ul:after{
+  clear: both;
+}
+
+#cssmenu {
+  width: 800px;
+  zoom: 1;
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+  top:0px;
+}
+
+#cssmenu > ul {
+  background-color:#630a0a;
+  margin: 0;
+  padding: 0;
+}
+
+
+#cssmenu > ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+#cssmenu > ul > li {
+  float: left;
+  position: relative;
+}
+
+
+#cssmenu > ul > li > a {
+  padding: 14px 18px;
+  display: block;
+  color: white;
+  font-size: 22px;
+  letter-spacing: -1px;
+  text-decoration: none;
+  line-height: 18px;
+  text-shadow: 0 1px 0 black;
+  font-weight: normal;
+}
+
+
+
+
+#cssmenu > ul > li:hover > a {
+  background-color: #994646;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+
+#cssmenu > ul > li > a > span {
+  line-height: 18px;
+}
+
+
+#cssmenu > ul > li.active > a,
+#cssmenu > ul > li > a:active {
+  background-color: #7d1e1e;
+}
+
+/* Childs */
+
+#cssmenu > ul ul {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 46px;
+  background-color:#cfcfcf;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+
+#cssmenu > ul li:hover ul {
+  opacity: 1;
+  margin: 0;
+  color: #000;
+  z-index: 2;
+  top: 46px;
+  left: 0;
+  visibility: visible;
+  opacity: 1;
+}
+
+#cssmenu > ul ul:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 20px;
+  background: transparent;
+}
+
+
+#cssmenu > ul ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+
+#cssmenu > ul ul li a {
+  padding: 8px 18px;
+  display: block;
+  color: #393939;
+  font-size: 21px;
+  letter-spacing: -1px;
+  text-decoration: none;
+  width: 150px;
+  border-left: 4px solid transparent;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  text-shadow: 0 1px 0 white;
+  font-weight: normal;
+}
+
+#cssmenu > ul ul li a:hover {
+  border-left: 4px solid #0f2100;
+  background-color: #994646;
+  color: white;
+}
+
+#cssmenu > ul ul li a:active {
+  background-color: #630a0a;
+}
